@@ -1,0 +1,149 @@
+==================================================================================
+git interview questions:
+
+1. What is Version control system or Source code manager?
+   version control system means maintain multiple version of single project.
+   source code manager is used to track modifications on source code repo.
+2. Benefits of VCS or SCM?
+   By maintaining vcs , if failure in new version we can easy to switch before version.
+   easy to track  the modifications in code.
+3. What is Git and What is a repository in GIT?
+    git is repostiory. developer ehnance the code  push to repostiory.
+            there are two repository 1.local repository
+                                     2.remote repositor
+   local repository is used to store data & which is managed in locally.
+   remote repository is hosted reposiory which is host at cloud or some where.
+                                      
+4. Diffrence between Git and SVN?
+  git
+  distribute reposiory
+  no need internet connection continously ( requried when push or pull data from remote repo.)
+  Don't think about data on loss because the data on remote repo collapse we can being back from local repo to remote
+ repo.
+  svn
+ centrilzed repostiory
+ continous internet connection should be there (developer work on centrilzed server)
+ data can't preserve here when server data fail.
+ it need extra disk for backup the data.
+
+5. Two types of git authentication?
+   ssh & https
+   https authentication is with username + password
+   ssh authentication means placing public rsa key on key authentination git hub.
+
+6. Branches in Git and its purpose?
+     branches is copy version of master branch. In order to disturbing the master or main code.
+   we use branches & their enhancement on code than push to master or main branch after unit testing on enhanced code.
+   
+What is the common branching pattern in GIT?
+ one master branch . creating multiple branches from master branches
+ 
+7. What is Pull requests?
+   our developer push data to remote repo it is not directly commit to project repo. git hub create pull request if person 
+ does not have commit permission.
+ 
+
+8. How to install git in Linux & Windows?
+     After launching server , update all package in server than install git through command (yum install git).
+
+9. How to setup repository though command line?
+   before using command (git inti), we want do things like update packages,git install & make some empty directory
+   after completion use this command inside directory or command use with directory name.
+  
+10. How to setup repository in github and clone it?
+     git hub account provide by company & which contains projects data. we can't upload videos file in it .
+ inside git hub number of repositories present so whenever new project comes they create new repo & upload projects 
+ codes
+      developer clone the code from git hub by using git SSH URl in command prompt & command (git clone url).
+ before doing these we want SSH key configure in git hub.
+
+11. What is git clone command used for?
+    git clone command used to pull code from git hub.
+
+12. What is git config command user for?
+     command is used to configure user in inside projects. this is for which user perform the action inside a project.
+  
+13. Git config data is stored in what location?
+     git config data is store in .git folder & inside .git folder a sub folder present with name of configurations.
+  all configuration information is store in subfolder.
+
+14. Git config global and local files?
+     git config global command is for config user or core editor to the main directory.
+
+15. Content of git config file?
+     it storage all configure information.
+     
+16. Git add command’s purpose?
+    git add command is used to add flie from working tree to staging area.
+
+17. How to remove/rename files in local git repo?
+    The data or file which is under working area. it is can't delete we want add file to staging area.
+ now, it is able to delete by using command (git rm -f file name ) & commit the removed file.
+                To rename a specfied file use command (mv old file name new file name ) after this compansion use command 
+ to commit.
+
+18. git commit command’s purpose?
+     git commit command which is used to commit the data from staging area to local repostiory.
+
+19. How to sync local git repo data with github?
+ git pull origin master (to sync local repo with remote repo)
+
+20. git fetch
+    To fetch data from remote repo to local repo ( to check any changes on code by other developers.)
+21. git merge?
+     To merge data from branch to another branch or master
+22. git pull?
+     pull command is used to pull data or file from git hub. this command is for daily pulling data (if any update on projects)
+
+23. How to change branches in local git repo?
+     A command is used to switch from branches "git checkout branch name "
+
+24. What is the difference between ‘git remote’ and ‘git clone’?
+     git remote is used refer to remote repo.
+     git clone is used to clone data from remote repo.
+
+25. git status?
+    git status command is for (to check file or data in working directory)
+
+26.What commands you know in git./ What commands you used in git .
+   git --version --> to check version of git
+   git config user.name "some name"--> to configure user
+   git init --> to initiate empty local repository for project.
+   git branch--> to list branch
+   git tag -a v0.1 --> to add tag. 
+27.how you used git .Explain git flow in your company / organization.
+     it easy to create new repository & find out whom commit data or code in repo.
+   In my company multiple teams are worker for a project. developer team enhance project code inside child branches.
+ this code is push to jenkins & their tags are created. creating shapshot from created tags & then launch to unit testing server
+for testing purpose. if there is no bug in code push to master or main branch by creating master version.
+
+28.What is git ignore .How to ignore a branch or files in git .
+   In order to ignore a file or  untracking file from git than we use ".gitignore file".
+    first, create a file & name as .gitignore file than add to staging & commit the file.
+      open that .gitignore file & type file name what you want ignore file or directory. 
+29.How to migrate from svn to git.
+  --->    creating user list in svn (java.jar~/svn-migration-script.jar authors<SVN repo url>authors.txt
+  --->   clone svn repo into git.(git svn clone --stllayout --authors-file=authors.txt<svn repo url>git gub repo name>
+  --->   add svn to git hub repo.(git remote add origin <github repo url>
+  --->   push the code to remote repo (git push -u origin master)
+  --->   Bring the svn branches & tags in local git. (git tag tagname tags) git branch branchname origin
+  --->   push the branches & tags to remote github. (git push --all) 
+30.What is git pro 
+ 
+31.Why git is better then SVN repo.What are difference between SVN repo and git .
+  git
+  distribute reposiory
+  no need internet connection continously ( requried when push or pull data from remote repo.)
+  Don't think about data on loss because the data on remote repo collapse we can being back from local repo to remote
+ repo.
+  svn
+ centrilzed repostiory
+ continous internet connection should be there (developer work on centrilzed server)
+ data can't preserve here when server data fail.
+ it need extra disk for backup the data.
+32.What is git / git hub / git lab explain in detail.
+ git is local repostiory to handle small & large projects with speed & efficiency.
+ git is web host repostiory to keep local files in remote repo.
+ git lab self host repository which is managed by us.
+
+
